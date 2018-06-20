@@ -1,0 +1,17 @@
+pragma solidity ^0.4.18;
+
+contract Stringy {
+  string message;
+
+  function Stringy() public {
+    message = "here I am";
+  }
+
+  function setStringy(string _message) public {
+    message = _message;
+  }
+
+  function getStringy() public view returns (string) {
+    return message;
+  }
+}
